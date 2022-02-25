@@ -67,7 +67,7 @@ echo '<thead>
       </tr>';
 echo '</thead>';
 
-foreach( $usuario as $id => $valor) {
+foreach( $usuario as $id => $valor) {//looping com vetores e criação de tabelas
        
     echo '<tr>';
     echo "<td>$id</td>";    
@@ -118,14 +118,27 @@ phpinfo(); informações importante, como variáveis de ambientes
 
 
 
-$dias = [   'Dom' => 'Domingo',
-            'Seg' => 'Segunda',
-            'Ter' => 'Terça',
-            'Qua' => 'Quarta',
-            'Qui' => 'Quinta',
-            'Sex' => 'Sexta',
-            'Sab' => 'Sábado',];
+$dias = [   'Dom' => ['Domingo', 'Domingo'],
+            'Seg' => ['Segunda' , 'Segunda-feira'],
+            'Ter' => ['Terça', 'Terça-feira'],
+            'Qua' => ['Quarta', 'Quarta-feira'],
+            'Qui' => ['Quinta', 'Quinta-feira'],
+            'Sex' => ['Sexta', 'Sexta-feira'],
+            'Sab' => ['Sábado','Sábado']];
 
-foreach( $dias as $dia => $nome) {
-    echo "$dia $nome <br> ";
+foreach( $dias as $dia => [$nome , $nomeCompleto]) {
+    echo "$dia: $nome > $nomeCompleto <br> ";
 }   
+/*
+$jogos = [  'Cod' => 'Call of duty',
+            'Fifa' => 'FIFA 21',
+            'Lol' => 'League of legends',
+            'Vava' => 'Valorant',
+            'CSGO' => 'Counter Strike Go Ofensive',
+            'GOW' => 'God of War'
+];
+    
+foreach ($jogos as $abreviacao => $nomeCompleto){
+    echo "$abreviacao: $nomeCompleto<br>";
+}
+*/
