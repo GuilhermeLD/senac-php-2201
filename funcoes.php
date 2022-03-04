@@ -33,7 +33,7 @@ function cadastraAluno(array $aluno):bool {
         }
 }
 
-$funcionou = cadastraAluno(['matricula' => 65464, 'nome' => 'David']);
+$funcionou = cadastraAluno(['matricula' => 654241, 'nome' => 'Alberto']);
 
 if ($funcionou){
         echo "<br>Aluno cadastrado com sucesso";
