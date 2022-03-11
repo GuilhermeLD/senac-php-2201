@@ -16,4 +16,4 @@ if(cadastraAluno(['matricula' => $matricula, 'nome' => $aluno])){
 }
 
 echo "<br><br><a href='dadosUsuario.php'><button>Cadastrar Outro</button></a>
-        &nbsp&nbsp&nbsp&nbsp<a href='listarUsuarios.php'><button>Listar Alunos</button></a>";
+        &nbsp&nbsp&nbsp&nbsp<a href='listarUsuarios.php'><button>Listar Alunos</button></a>";   
